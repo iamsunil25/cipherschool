@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>PUNK API</title>
+  <script src="https://use.fontawesome.com/46b3527c74.js"></script>
+  
+</head>
+
+<body>
+
+  <div class='container'>
+  <h1 style="text-align: center; color: blue;">PUNK API</h1>
+  <div class='tabs'>
+    <div class='tab__item weak '>
+      <h3>0% - 10%</h3>
+    </div>
+    <div class='tab__item medium active'>
+      <h3>10% - 30%</h3>
+    </div>
+    <div class='tab__item strong'>
+      <h3>30% - 100%</h3>
+    </div>
+  </div>
+  <h4 class='favourites__title'>Favourites</h4>
+  <div class='favourites'>
+
+  </div>
+
+  <div class='beers'>
+  </div>
+
+</div>
+<div class='bg'></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="fonsi.js"></script>
+
+<style>
+    body {
+    font-size: 14px;
+    line-height: 1.462;
+    font-family: Arial, sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .beers {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 18px;
+  }
+  .beers .beer {
+    background: #f9f9f9;
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .beers .beer img {
+    width: 20%;
+  }
+  .beers .beer .fa-star {
+    float: right;
+    color: #d6d6d6;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .active-star {
+    color:yellowgreen !important;
+  }
+  
+  .tabs {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 10%;
+    background:brown;
+    text-align: center;
+    padding: 20%;
+    margin-bottom: 18px;
+  }
+  
+  .tab__item {
+    background:green;
+    cursor: pointer;
+    color: yellow;
+    padding: 16%;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .active {
+    background: red;
+    color: #fff;
+  }
+  
+  .pop-up {
+    display: none;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 3%;
+    width: 55%;
+    top: 100%;
+    z-index: 99;
+  }
+  
+  .fa-window-close-o {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  .bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:red;
+    display: none;
+  }
+  
+  .title {
+    color:red;
+  }
+  
+  .favourites {
+    display: none;
+    background: red;
+    position: absolute;
+    width: 100%;
+  }
+  .favourites img {
+    width: 20%;
+  }
+  
+  .favourites__title {
+    background: orangered;
+    display: inline-block;
+    padding: 5px;
+    color:tan;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  
+  .favourites__item {
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+  }
+  
+  .favourites__close {
+    float: left;
+    cursor: pointer;
+  }
+  
+</style>
+
+
+</body>
+
+</html>
